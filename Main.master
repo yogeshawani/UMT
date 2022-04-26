@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/full-slider.css" rel="stylesheet" />
+    <meta name="description" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="navbar navbar-inverse navbar-fixed-top headroom animated">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <a class="navbar-brand" href="#">Site Survey Tool</a>
+                <%--<img src="img/UMTlogo3.png" alt="UMT" />--%> 
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <%--<li id="home" runat="server"><a href="Default.aspx">Home</a></li>   --%>
+                    <li id="liassetregister" runat="server"><a href="Inventory.aspx">Site Master</a></li>
+                   <%-- <li id="liseb" runat="server"><a href="SEBList.aspx">SEB</a></li>--%>
+                    <li id="lipm" runat="server"><a href="pm.aspx">Preventive Maintanance</a></li>
+                    <%--<li id="licamatracker" runat="server"><a href="#">CAMA Tracker</a></li>--%>
+                    <%--<li id="lifuel" runat="server"><a href="FuelDetails.aspx">FMT</a></li>--%>
+                   <%--<li id="liSiteAlarms" runat="server"><a href="SiteAlarms.aspx">SITE ALARMS</a></li> --%>
+                    <%--<li id="lireport" runat="server" class="dropdown"><a href="#" class="dropdown-toggle"
+                        data-toggle="dropdown">REPORTS <b class="caret"></b></a>
+                        <ul class="dropdown-menu">                            
+                            <li><a href="#">INVENTORIES</a></li>
+                            <li><a href="Reports.aspx">ASSET REGISTER</a></li>
+                            <li><a href="SEBList.aspx">SEB</a></li>
+                            <li><a href="PmReports.aspx">PM</a></li>  
+                            <li><a href="FMTReport.aspx">FMT</a></li>                            
+                        </ul>
+                    </li>--%>
+                    <li id="account" runat="server" class="dropdown"><a href="#" class="dropdown-toggle"
+                        data-toggle="dropdown"><span id="username" runat="server">My Account</span> <b class="caret">
+                        </b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </li>
+                    <%--<li id="liadmin" runat="server" visible="false"><a href="Admin/Admindashboard.aspx">ADMIN</a></li>--%>
+                    <li id="lilogout" runat="server"><a href="Logout.aspx">Logout</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <footer id="footer">
+            <div class="footer2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p class="simplenav">
+                                    <a href="#">Home</a> | 
+								<a href="#">About Us</a> |
+								<a href="#">Terms & Conditions</a> |
+								<a href="#">Policies</a> |
+								<b><a href="#">Contact us</a></b>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 widget">
+                            <div class="widget-body">
+                                <p class="">
+                                    Copyright &copy; 2016, M B Infotech. Designed by <a href="#" rel="designer">M B Infotech</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /row of widgets -->
+                </div>
+            </div>
+
+        </footer>
+    </form>
+</body>
+</html>
